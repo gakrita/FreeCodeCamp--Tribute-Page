@@ -17,6 +17,7 @@ body {
   color: #2d334a;
   text-align: center;
   line-height: 1.6;
+  overflow-x: hidden;
   box-sizing: border-box;
 }
 
@@ -71,9 +72,20 @@ h3 {
   animation: moveInBottom 3s ease-out;
 }
 
+.headline {
+  max-width: 26rem;
+  margin: auto;
+  transition: all 0.2s;
+}
+
+.headline:hover {
+  transform: skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
 .ul-list,
 .blockquote {
-  max-width: 500px;
+  max-width: 33rem;
   text-align: justify;
   text-shadow: 0.03rem 0.03rem 0.03rem rgb(45 51 74 / 40%);
 }
@@ -113,7 +125,7 @@ h3 {
 @keyframes moveInTop {
   0% {
     opacity: 0;
-    transform: translateY(-33.3rem);
+    transform: translateY(-33rem);
   }
   100% {
     opacity: 1;
@@ -124,7 +136,7 @@ h3 {
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(33.3rem);
+    transform: translateY(33rem);
   }
   100% {
     opacity: 1;
