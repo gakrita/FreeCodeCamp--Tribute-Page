@@ -144,7 +144,7 @@ h3 {
   }
 }
 
-@media screen and (max-width: 920px) {
+/*@media screen and (max-width: 920px) {
   .image {
     width: 80%;
   }
@@ -190,6 +190,27 @@ h3 {
 @media screen and (max-width: 280px) {
   html {
     font-size: 45.75%;
+  }
+}*/
+
+@media (max-width: 1200px) {
+  .image {
+    width: 70%;
+  }
+
+  .img-caption {
+    width: 70%;
+  }
+
+  .ul-list,
+  .blockquote {
+    width: 75%;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 63%;
   }
 }
 
